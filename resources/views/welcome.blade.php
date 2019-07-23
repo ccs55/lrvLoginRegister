@@ -9,6 +9,7 @@
 
 <body>
     <div id="app">
+        <my-component></my-component>
         <example-component></example-component>
     </div>
     <script src="/js/app.js"></script>
