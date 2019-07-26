@@ -1,0 +1,175 @@
+/* line 51, C:/Users/55555/Documents/GitHub/registerlogin/scss/style.scss */
+body {
+  font-family: sans-serif;
+  background-color: #f7f7f7;
+}
+
+/* line 55, C:/Users/55555/Documents/GitHub/registerlogin/scss/style.scss */
+h2 {
+  font-weight: bold;
+  color: #6c757d;
+}
+
+/* line 58, C:/Users/55555/Documents/GitHub/registerlogin/scss/style.scss */
+p.create {
+  color: #98a6ad;
+  line-height: 1.8;
+  margin-bottom: 48px;
+}
+
+/* line 63, C:/Users/55555/Documents/GitHub/registerlogin/scss/style.scss */
+::placeholder {
+  color: #98a6ad;
+  margin-left: 15px;
+}
+
+/* line 67, C:/Users/55555/Documents/GitHub/registerlogin/scss/style.scss */
+img {
+  position: relative;
+  top: 4px;
+}
+
+/* line 71, C:/Users/55555/Documents/GitHub/registerlogin/scss/style.scss */
+.simulor {
+  text-align: center;
+  padding: 0px 75px;
+}
+
+/* line 76, C:/Users/55555/Documents/GitHub/registerlogin/scss/style.scss */
+#register {
+  padding: 40px 36px 36px 36px;
+  margin: 73px auto 28px auto;
+  background-color: white;
+  width: 449px;
+  height: 559px;
+}
+
+/* line 80, C:/Users/55555/Documents/GitHub/registerlogin/scss/style.scss */
+#login {
+  padding: 40px 36px 36px 36px;
+  margin: 73px auto 28px auto;
+  background-color: white;
+  width: 449px;
+  height: 467px;
+}
+
+/* line 85, C:/Users/55555/Documents/GitHub/registerlogin/scss/style.scss */
+input[type="text"] {
+  width: 100%;
+  height: 38px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 12.5pt;
+  box-sizing: border-box;
+  padding: 15px;
+  margin-bottom: 14px;
+}
+
+/* line 91, C:/Users/55555/Documents/GitHub/registerlogin/scss/style.scss */
+input[type="submit"] {
+  width: 100%;
+  height: 38px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 12.5pt;
+  color: white;
+  margin-top: 14px;
+  background-color: #00acc1;
+}
+
+/* line 98, C:/Users/55555/Documents/GitHub/registerlogin/scss/style.scss */
+.check {
+  display: block;
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 14px;
+  margin-top: 14px;
+}
+
+/* line 105, C:/Users/55555/Documents/GitHub/registerlogin/scss/style.scss */
+.check input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* line 110, C:/Users/55555/Documents/GitHub/registerlogin/scss/style.scss */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 16px;
+  width: 16px;
+  background-color: #fff;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+/* line 118, C:/Users/55555/Documents/GitHub/registerlogin/scss/style.scss */
+.check:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* line 122, C:/Users/55555/Documents/GitHub/registerlogin/scss/style.scss */
+.check input:checked ~ .checkmark {
+  background-color: #00acc1;
+}
+
+/* line 126, C:/Users/55555/Documents/GitHub/registerlogin/scss/style.scss */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* line 132, C:/Users/55555/Documents/GitHub/registerlogin/scss/style.scss */
+.check input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* line 136, C:/Users/55555/Documents/GitHub/registerlogin/scss/style.scss */
+.check .checkmark:after {
+  top: 3px;
+  left: 6px;
+  height: 6px;
+  width: 3px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+/* line 143, C:/Users/55555/Documents/GitHub/registerlogin/scss/style.scss */
+.form {
+  font-weight: bold;
+  color: #6c757d;
+}
+
+/* line 146, C:/Users/55555/Documents/GitHub/registerlogin/scss/style.scss */
+span#accept {
+  color: #98a6ad;
+}
+
+/* line 149, C:/Users/55555/Documents/GitHub/registerlogin/scss/style.scss */
+.footer {
+  margin-top: 20px;
+  margin-bottom: 275px;
+  text-align: center;
+  color: #98a6ad;
+}
+
+/* line 155, C:/Users/55555/Documents/GitHub/registerlogin/scss/style.scss */
+a:link,
+a:visited {
+  font-weight: bold;
+  color: #6c757d;
+  text-decoration: none;
+}
+
+/* line 160, C:/Users/55555/Documents/GitHub/registerlogin/scss/style.scss */
+a:hover {
+  text-decoration: underline;
+}
+
+/*# sourceMappingURL=style.css.map */

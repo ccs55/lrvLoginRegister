@@ -20,13 +20,12 @@ window.Vue = require("vue");
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default));
 
 Vue.component(
-    "example-component",
-    require("./components/ExampleComponent.vue").default
+    "login-component",
+    require("./components/LoginComponent.vue").default
 );
-// Vue.component("my-component", require("./components/MyComponent.vue").default);
-import MyComponent from "./components/MyComponent.vue";
+import RegisterComponent from "./components/RegisterComponent.vue";
 
-Vue.component("my-component", MyComponent);
+Vue.component("register-component", RegisterComponent);
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application
