@@ -40,7 +40,7 @@ class UserController extends Controller
         $user->password = hash('md5', $request->password);
         $user->save();
 
-        return redirect('/');
+        return redirect('/login');
     }
 
     public function loginUser(Request $request)
