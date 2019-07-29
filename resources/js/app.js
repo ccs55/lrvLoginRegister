@@ -32,6 +32,14 @@ Vue.component("register-component", RegisterComponent);
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
+// const routes = [
+//     {
+//         name: "Register",
+//         path: "/register",
+//         component: RegisterComponent
+//     }
+// ];
+
 const app = new Vue({
     el: "#app"
 });

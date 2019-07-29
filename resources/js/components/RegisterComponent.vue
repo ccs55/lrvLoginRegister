@@ -10,16 +10,21 @@
         <p class="create">Don't have an account? Create free account</p>
       </div>
 
-      <form action method="POST">
+      <form method="POST" action @submit.prevent="onSubmit">
         <div class="form">
           <p>Full Name</p>
-          <input type="text" placeholder="Enter your name" />
+          <input type="text" placeholder="Enter your name" name="name" v-model="user.name" />
 
           <p>Email address</p>
-          <input type="text" placeholder="Enter your email" />
+          <input type="text" placeholder="Enter your email" name="email" v-model="user.email" />
 
           <p>Password</p>
-          <input type="text" placeholder="Enter your password" />
+          <input
+            type="password"
+            placeholder="Enter your password"
+            name="password"
+            v-model="user.password"
+          />
 
           <label class="check">
             I accept
@@ -29,15 +34,34 @@
           </label>
         </div>
         <input type="submit" value="Sign Up" />
+        <p v-if="check">Đăng kí thành công !</p>
+        <br />
       </form>
     </div>
 
     <p class="footer">
       Already have an account?
       <span>
-        <a href="/">Login</a>
+        <a href="/login">Login</a>
       </span>
     </p>
   </div>
 </template>
 
+<script>
+export default {
+  data() {
+    return {
+      user: {},
+      check: false
+    };
+  },
+  methods: {
+    onSubmit() {
+      axios.post("http://127.0.0.1:8000/users", this.user).then(response => {
+        this.check = true;
+      });
+    }
+  }
+};
+</script>
